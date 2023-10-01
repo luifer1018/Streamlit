@@ -33,9 +33,13 @@ if pagina_seleccionada == "Homepage":
         )   
    
     # Cargar las imágenes
-    image1 = Image.open("https://github.com/luifer1018/Streamlit/blob/c718045a3c1bbddeb7eb919a90dc38dd36579d1e/imagenes%20Wirolimo/SUV.png")
+    
+    image_url = "https://raw.githubusercontent.com/luifer1018/Streamlit/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/SUV.png"
+    image1 = Image.open(image_url)
+    st.image(image1, caption='SUV Image', use_column_width=True)
+    
     image2 = Image.open("https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/Sedan.png")
-
+        
 
     # Dividir el diseño en dos columnas
     col1, col2 = st.columns(2)
