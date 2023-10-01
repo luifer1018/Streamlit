@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 
 
 # Logo de la empresa (cambia la URL a la de tu imagen PNG)
-logo_url = "https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/logo.png"
+logo_url = "https://i.imgur.com/9NilyvK.jpg"
 
 # Coloca el logo en la parte superior del sidebar
 st.sidebar.image(logo_url, use_column_width=True)
@@ -34,11 +34,11 @@ if pagina_seleccionada == "Homepage":
    
     # Cargar las imágenes
     
-    image_url = "https://raw.githubusercontent.com/luifer1018/Streamlit/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/SUV.png"
+    image_url = "https://i.imgur.com/80oMhJ1.jpg"
     image1 = Image.open(image_url)
     st.image(image1, caption='SUV Image', use_column_width=True)
     
-    image2 = Image.open("https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/Sedan.png")
+    image2 = Image.open("https://i.imgur.com/80oMhJ1.jpg")
         
 
     # Dividir el diseño en dos columnas
