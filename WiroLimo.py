@@ -34,11 +34,11 @@ if pagina_seleccionada == "Homepage":
    
     # Cargar las imágenes
     
-    image_url = "https://i.imgur.com/80oMhJ1.jpg"
+    image_url = "https://i.imgur.com/6JK8z3Y.png"
     image1 = Image.open(image_url)
     st.image(image1, caption='SUV Image', use_column_width=True)
     
-    image2 = Image.open("https://i.imgur.com/80oMhJ1.jpg")
+    image2 = Image.open("https://i.imgur.com/ssjpnAG.png")
         
 
     # Dividir el diseño en dos columnas
