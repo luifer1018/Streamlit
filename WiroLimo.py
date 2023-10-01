@@ -117,7 +117,7 @@ elif pagina_seleccionada == "Sports Events Services":
         # Configurar el servidor SMTP
         smtp_server = "smtp.example.com"
         smtp_port = 587
-        smtp_user = "tluivaniri@gmail.com"
+        smtp_user = "luivaniri@gmail.com"
         smtp_password = "ryvk ptuq ahvh paeh"
 
         # Crear el mensaje de correo
@@ -187,7 +187,7 @@ elif pagina_seleccionada == "Airport Services":
         # Configurar el servidor SMTP
         smtp_server = "smtp.gmail.com"
         smtp_port = 587
-        smtp_user = "lvuianiri@gmail.com"
+        smtp_user = "luivaniri@gmail.com"
         smtp_password = "ryvk ptuq ahvh paeh"
 
         # Crear el mensaje de correo
