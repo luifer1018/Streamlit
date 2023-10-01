@@ -33,7 +33,7 @@ if pagina_seleccionada == "Homepage":
         )   
    
     # Cargar las imágenes
-    image1 = Image.open("https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/SUV.png")
+    image1 = Image.open("blob:https://github.com/deb76af3-8ef9-4164-9140-bba729dee6aa")
     image2 = Image.open("https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/Sedan.png")
 
 
