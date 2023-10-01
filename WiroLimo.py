@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 
 
 # Logo de la empresa (cambia la URL a la de tu imagen PNG)
-logo_url = "https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/Camioneta.jpg/logo.png"
+logo_url = "https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/logo.png"
 
 # Coloca el logo en la parte superior del sidebar
 st.sidebar.image(logo_url, use_column_width=True)
@@ -33,8 +33,8 @@ if pagina_seleccionada == "Homepage":
         )   
    
     # Cargar las imágenes
-    image1 = Image.open("imagenes WiroLimo/SUV.png")
-    image2 = Image.open("imagenes WiroLimo/Sedan.png")
+    image1 = Image.open("https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/SUV.png")
+    image2 = Image.open("https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/Sedan.png")
 
 
     # Dividir el diseño en dos columnas
@@ -249,7 +249,7 @@ elif pagina_seleccionada == "About Us":
     # Agrega información sobre tu empresa y su historia aquí.
        
     # Cargar la imágen
-    image1 = Image.open("imagenes WiroLimo/AvionAuto.png")
+    image1 = Image.open("https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/AvionAuto.png")
     
     # Dividir el diseño en dos columnas
     col1, col2 = st.columns(2)
