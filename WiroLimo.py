@@ -194,8 +194,7 @@ elif pagina_seleccionada == "Airport Services":
         msg['To'] = destinatario
         msg['Subject'] = "Confirmación de servicio"
 
-        # Cuerpo del mensaje
-        mensaje = f"Gracias por reservar un servicio desde {aeropuerto} en un {vehiculo} a las {hora_servicio}."
+        mensaje = f"Gracias por reservar un servicio desde {lugar_recogida} hacia {aeropuerto} en un {vehiculo} a las {hora_servicio}."
         msg.attach(MIMEText(mensaje, 'plain'))
 
         # Iniciar conexión con el servidor SMTP y enviar el correo
