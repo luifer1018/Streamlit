@@ -37,7 +37,7 @@ if pagina_seleccionada == "Homepage":
         with colum1:
             image1 = Image.open("imagenes Wirolimo/SUV.png")
             st.image(image1, caption='SUV Image', use_column_width=True)
-        with colum2    
+        with colum2:    
             image2 = Image.open("https://i.imgur.com/80oMhJ1.jpg")
             st.image(image2, caption='Sedan Image', use_column_width=True)
             
