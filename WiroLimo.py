@@ -209,33 +209,48 @@ elif pagina_seleccionada == "Airport Services":
             st.error(f"Error al enviar el correo electrónico: {str(e)}")
 
     # Interfaz de usuario de Streamlit
-    st.title("Reservation - Airports from/to Manhattan, Downtown up to 100th street (including tolls")
+st.title("Reservation of Rates for Sports Events")
 
-    # Selección de aeropuerto
-    aeropuerto = st.selectbox("Seleccione el aeropuerto:", list(tarifas_aeropuertos.keys()))
+# Selección de aeropuerto
+aeropuerto = st.selectbox("Seleccione el aeropuerto:", list(tarifas_aeropuertos.keys()))
 
-    # Selección de vehículo
-    vehiculo = st.radio("Seleccione el tipo de vehículo:", ["Sedan", "SUV"])
+# Selección de vehículo
+vehiculo = st.radio("Seleccione el tipo de vehículo:", ["Sedan", "SUV"])
 
-    # Calcular tarifa
-    tarifa = tarifas_aeropuertos[aeropuerto][vehiculo]
+# Campo para ingresar el lugar de recogida
+lugar_recogida = st.text_input("pick up place:")
 
-    # Mostrar la tarifa
-    st.write(f"Tarifa desde {aeropuerto} en {vehiculo}: ${tarifa:.2f}")
+# Calcular tarifa
+tarifa = tarifas_aeropuertos[aeropuerto][vehiculo]
 
-    # Formulario de reserva
-    st.subheader("Reserva de Servicio")
-    email = st.text_input("Ingrese su correo electrónico:")
-    hora_servicio = st.time_input("Seleccione la hora del servicio:")
+# Mostrar la tarifa
+st.write(f"Tarifa desde {aeropuerto} en {vehiculo}: ${tarifa:.2f}")
 
-    # Botón para enviar reserva
-    if st.button("Enviar reserva"):
-        if email and hora_servicio:
-            enviar_correo(email, hora_servicio.strftime("%H:%M"), aeropuerto, vehiculo)
-        else:
-            st.warning("Por favor, complete todos los campos.")
+# Formulario de reserva
+st.subheader("Reserva de Servicio")
+email = st.text_input("Ingrese su correo electrónico:")
+hora_servicio = st.time_input("Seleccione la hora del servicio:")
 
-
+# Botón para enviar reserva
+if st.button("Enviar reserva"):
+    if email and hora_servicio and lugar_recogida:
+        enviar_correo(email, hora_servicio.strftime("%H:%M"), aeropuerto, vehiculo, lugar_recogida)
+        
+        # Crear un mapa que muestra la ruta entre el lugar de recogida y el aeropuerto
+        mapa = folium.Map(location=[40.7128, -74.0060], zoom_start=10)  # Coordenadas de Nueva York
+        
+        # Agregar marcadores para el lugar de recogida y el aeropuerto
+        folium.Marker(location=[40.7128, -74.0060], tooltip="Aeropuerto").add_to(mapa)
+        folium.Marker(location=[40.730610, -73.935242], tooltip="Lugar de recogida").add_to(mapa)
+        
+        # Dibujar una línea entre los dos puntos
+        folium.PolyLine(locations=[[40.7128, -74.0060], [40.730610, -73.935242]], color='blue').add_to(mapa)
+        
+        # Mostrar el mapa en la aplicación Streamlit
+        folium_static(mapa)
+        
+    else:
+        st.warning("Por favor, complete todos los campos.")
 
 
 #-------------------------------------------------------------------------------------------------
