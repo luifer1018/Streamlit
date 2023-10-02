@@ -1,9 +1,9 @@
-
 import streamlit as st
-from PIL import Image
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import folium
+from streamlit_folium import folium_static
 
 
 # Logo de la empresa (cambia la URL a la de tu imagen PNG)
