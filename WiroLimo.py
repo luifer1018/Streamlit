@@ -34,6 +34,8 @@ if pagina_seleccionada == "Homepage":
     
     with st.container():
     # Dividir el diseño en dos columnas
+        image1 = Image.open("imagenes Wirolimo/SUV.png")
+        image2 = Image.open("imagenes Wirolimo/Sedan.png")
         col1, col2 = st.columns(2)
 
     # Mostrar la primera imagen en la columna izquierda
