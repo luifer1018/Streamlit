@@ -31,38 +31,29 @@ if pagina_seleccionada == "Homepage":
         "<h1 style='text-align:center; color: black;'>Welcome to WiroLimo Transport</h1>",
         unsafe_allow_html=True,
         )   
+    
     with st.container():
-        colum1, colum2 = st.columns(2)
-        # Cargar las imágenes
-        with colum1:
-            image1 = Image.open("imagenes Wirolimo/SUV.png")
-            st.image(image1, caption='SUV Image', use_column_width=True)
-        with colum2:    
-            image2 = Image.open("imagenes Wirolimo/Sedan.png")
-            st.image(image2, caption='Sedan Image', use_column_width=True)
-            
-
     # Dividir el diseño en dos columnas
     col1, col2 = st.columns(2)
 
     # Mostrar la primera imagen en la columna izquierda
-    with col1:
-        st.image(image1, caption="SUV fleet", use_column_width=True)
-        # Comentario para la primera imagen
-        parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
-        st.markdown(
-            f"<p style='text-align:justify; font-family: cursive; font-style: italic; color: green;'>{parrafo1}</p>",
-            unsafe_allow_html=True,
-        )
-    # Mostrar la segunda imagen en la columna derecha
-    with col2:
-        st.image(image2, caption="Sedan fleet", use_column_width=True)
-        # Comentario para la segunda imagen
-        parrafo2="Our sedan vehicles are ideal for city trips, business meetings, outings with friends or any occasion when you need comfortable and stylish transportation."
-        st.markdown(
-            f"<p style='text-align:justify; font-family: cursive; font-style: italic; color: green;'>{parrafo2}</p>",
-            unsafe_allow_html=True,
-        )
+        with col1:
+            st.image(image1, caption="SUV fleet", use_column_width=True)
+            # Comentario para la primera imagen
+            parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
+            st.markdown(
+                f"<p style='text-align:justify; font-family: cursive; font-style: italic; color: green;'>{parrafo1}</p>",
+                unsafe_allow_html=True,
+            )
+        # Mostrar la segunda imagen en la columna derecha
+        with col2:
+            st.image(image2, caption="Sedan fleet", use_column_width=True)
+            # Comentario para la segunda imagen
+            parrafo2="Our sedan vehicles are ideal for city trips, business meetings, outings with friends or any occasion when you need comfortable and stylish transportation."
+            st.markdown(
+                f"<p style='text-align:justify; font-family: cursive; font-style: italic; color: green;'>{parrafo2}</p>",
+                unsafe_allow_html=True,
+            )
 
 #---------------------------------------------------------------------------------------------------
 #REDES SOCIALES
