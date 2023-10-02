@@ -33,16 +33,7 @@ if pagina_seleccionada == "Homepage":
         )   
    
     # Cargar las imágenes
-    st.markdown(
-        "<a href='https://imgur.com/j7zuXBl"><img src="https://i.imgur.com/j7zuXBl.png" title="source: imgur.com' /></a>",
-        unsafe_allow_html=True,
-        )   
-
-    
-    image_url = "https://i.imgur.com/9NilyvK.jpg"
-    image3 = Image.open(image_url)
-    st.image(image3, caption='SUV Image', use_column_width=True)
-     
+   
     image1 = Image.open("Wirolimo/SUV.png")
     st.image(image1, caption='SUV Image', use_column_width=True)
     image2 = Image.open("https://imgur.com/ssjpnAG")
