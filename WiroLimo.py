@@ -31,7 +31,7 @@ if pagina_seleccionada == "Homepage":
         "<h1 style='text-align:center; color: black;'>Welcome to WiroLimo Transport</h1>",
         unsafe_allow_html=True,
         )   
- with st.container():
+  with st.container():
      colum1, colum2 = st.columns(2)
         # Cargar las imágenes
     with colum1:
