@@ -34,7 +34,7 @@ if pagina_seleccionada == "Homepage":
    
     # Cargar las imágenes
 
-    image_url = "https://i.imgur.com/KnbQWsR.jpg"
+    image_url = "https://imgur.com/KnbQWsR"
     image3 = Image.open(image_url)
     st.image(image3, caption='SUV Image', use_column_width=True)
      
