@@ -34,7 +34,7 @@ if pagina_seleccionada == "Homepage":
     
     with st.container():
     # Dividir el diseño en dos columnas
-    col1, col2 = st.columns(2)
+        col1, col2 = st.columns(2)
 
     # Mostrar la primera imagen en la columna izquierda
         with col1:
