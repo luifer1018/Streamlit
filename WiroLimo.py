@@ -31,15 +31,15 @@ if pagina_seleccionada == "Homepage":
         "<h1 style='text-align:center; color: black;'>Welcome to WiroLimo Transport</h1>",
         unsafe_allow_html=True,
         )   
-  with st.container():
-     colum1, colum2 = st.columns(2)
+    with st.container():
+       colum1, colum2 = st.columns(2)
         # Cargar las imágenes
-    with colum1:
-        image1 = Image.open("imagenes Wirolimo/SUV.png")
-        st.image(image1, caption='SUV Image', use_column_width=True)
-    with colum2    
-        image2 = Image.open("https://i.imgur.com/80oMhJ1.jpg")
-        st.image(image2, caption='Sedan Image', use_column_width=True)
+       with colum1:
+          image1 = Image.open("imagenes Wirolimo/SUV.png")
+          st.image(image1, caption='SUV Image', use_column_width=True)
+       with colum2    
+          image2 = Image.open("https://i.imgur.com/80oMhJ1.jpg")
+          st.image(image2, caption='Sedan Image', use_column_width=True)
             
 
     # Dividir el diseño en dos columnas
