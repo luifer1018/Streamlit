@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 
 
 # Logo de la empresa (cambia la URL a la de tu imagen PNG)
-logo_url = "https://i.imgur.com/9NilyvK.jpg"
+logo_url = "imagenes Wirolimo/logo.png"
 
 # Coloca el logo en la parte superior del sidebar
 st.sidebar.image(logo_url, use_column_width=True)
