@@ -38,7 +38,7 @@ if pagina_seleccionada == "Homepage":
             image1 = Image.open("imagenes Wirolimo/SUV.png")
             st.image(image1, caption='SUV Image', use_column_width=True)
         with colum2:    
-            image2 = Image.open("https://i.imgur.com/80oMhJ1.jpg")
+            image2 = Image.open("imagenes Wirolimo/Sedan.png")
             st.image(image2, caption='Sedan Image', use_column_width=True)
             
 
@@ -254,7 +254,7 @@ elif pagina_seleccionada == "About Us":
     # Agrega información sobre tu empresa y su historia aquí.
        
     # Cargar la imágen
-    image1 = Image.open("https://github.com/luifer1018/Streamlit/tree/81f8f386875ff6dfc673445ba96fa695ea94eb39/imagenes%20Wirolimo/AvionAuto.png")
+    image1 = Image.open("imagenes Wirolimo/AvionAuto.png")
     
     # Dividir el diseño en dos columnas
     col1, col2 = st.columns(2)
