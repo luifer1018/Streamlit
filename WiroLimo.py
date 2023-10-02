@@ -33,6 +33,10 @@ if pagina_seleccionada == "Homepage":
         )   
    
     # Cargar las imágenes
+
+    image_url = "https://i.imgur.com/KnbQWsR.jpg"
+    image3 = Image.open(image_url)
+    st.image(image3, caption='SUV Image', use_column_width=True)
      
     image1 = Image.open("Wirolimo/SUV.png")
     st.image(image1, caption='SUV Image', use_column_width=True)
