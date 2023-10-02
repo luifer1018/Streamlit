@@ -34,7 +34,7 @@ if pagina_seleccionada == "Homepage":
    
     # Cargar las imágenes
    
-    image1 = Image.open("Wirolimo/SUV.png")
+    image1 = Image.open("Wirolimhttps://github.com/luifer1018/Streamlit/blob/45b5453c9d7e129b8d43685eba8336b0f47baa77/imagenes%20Wirolimo/SUV.pngo/SUV.png")
     st.image(image1, caption='SUV Image', use_column_width=True)
     image2 = Image.open("https://imgur.com/ssjpnAG")
     st.image(image2, caption='Sedan Image', use_column_width=True)
