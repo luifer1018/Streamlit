@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 
 
 # Logo de la empresa (cambia la URL a la de tu imagen PNG)
-logo_url = "imagenes Wiroljimo/logo.png"
+logo_url = "imagenes Wirolimo/logo.png"
 
 # Coloca el logo en la parte superior del sidebar
 st.sidebar.image(logo_url, use_column_width=True)
@@ -118,8 +118,8 @@ elif pagina_seleccionada == "Sports Events Services":
         # Configurar el servidor SMTP
         smtp_server = "smtp.example.com"
         smtp_port = 587
-        smtp_user = "tu_correo@example.com"
-        smtp_password = "tu_contraseña"
+        smtp_user = "luivaniri@gmail.com"
+        smtp_password = "ryvk ptuq ahvh paeh"
 
         # Crear el mensaje de correo
         msg = MIMEMultipart()
