@@ -40,7 +40,7 @@ if pagina_seleccionada == "Homepage":
     col3, col4 = st.columns(2)
 
     with col3:
-        st.image(image3, caption="SUV fleet", use_column_width=True)
+        st.image(image3, caption="Sedan fleet", use_column_width=True)
 
     with col4:
         st.image(image4, caption="Sedan fleet", use_column_width=True)
@@ -65,7 +65,7 @@ if pagina_seleccionada == "Homepage":
         
     # Mostrar la segunda imagen en la columna derecha
     with col2:
-        st.image(image2, caption="Sedan fleet", use_column_width=True)
+        st.image(image2, caption="SUV fleet", use_column_width=True)
         # Comentario para la segunda imagen
         
         st.write("<hr>", unsafe_allow_html=True) # Linea divisora
