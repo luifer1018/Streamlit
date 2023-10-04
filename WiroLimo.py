@@ -34,7 +34,7 @@ if pagina_seleccionada == "Homepage":
    
     # Cargar las imágenes
     image3 = Image.open("imagenes Wirolimo/Car5.jpg")
-    image4 = Image.open("imagenes Wirolimo/Car6.jpg")
+    image4 = Image.open("imagenes Wirolimo/Car7.jpg")
     parrafo2="Our sedan vehicles are ideal for city trips, business meetings, outings with friends or any occasion when you need comfortable and stylish transportation."
    
     col3, col4 = st.columns(2)
