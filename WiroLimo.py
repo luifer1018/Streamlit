@@ -33,8 +33,8 @@ if pagina_seleccionada == "Homepage":
         )   
    
     # Cargar las imágenes
-    image3 = Image.open("imagenes Wirolimo/Car3.png")
-    image4 = Image.open("imagenes Wirolimo/Car6.png")
+    image3 = Image.open("imagenes Wirolimo/Car3.jpg")
+    image4 = Image.open("imagenes Wirolimo/Car6.jpg")
     
     col3, col4 = st.columns(2)
 
@@ -45,8 +45,8 @@ if pagina_seleccionada == "Homepage":
         st.image(image4, caption="Sedan fleet", use_column_width=True)
 
     
-    image1 = Image.open("imagenes Wirolimo/Car1.png")
-    image2 = Image.open("imagenes Wirolimo/Car5.png")
+    image1 = Image.open("imagenes Wirolimo/Car1.jpg")
+    image2 = Image.open("imagenes Wirolimo/Car5.jpg")
 
 
     # Dividir el diseño en dos columnas
