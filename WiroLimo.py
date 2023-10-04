@@ -34,7 +34,7 @@ if pagina_seleccionada == "Homepage":
    
     # Cargar las imágenes
     image3 = Image.open("imagenes Wirolimo/Car5.jpg")
-    image4 = Image.open("imagenes Wirolimo/Car7.jpg")
+    image4 = Image.open("imagenes Wirolimo/Car6.jpg")
     parrafo2="Our sedan vehicles are ideal for city trips, business meetings, outings with friends or any occasion when you need comfortable and stylish transportation."
    
     col3, col4 = st.columns(2)
@@ -52,7 +52,7 @@ if pagina_seleccionada == "Homepage":
         )
     
     image1 = Image.open("imagenes Wirolimo/Car1.jpg")
-    image2 = Image.open("imagenes Wirolimo/Car3.jpg")
+    image2 = Image.open("imagenes Wirolimo/Car7.jpg")
     parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
     
     # Dividir el diseño en dos columnas
