@@ -44,7 +44,7 @@ if pagina_seleccionada == "Homepage":
     with col4:
         st.image(image4, caption="Sedan fleet", use_column_width=True)
 
-    
+    st.write("<hr>", unsafe_allow_html=True)
     image1 = Image.open("imagenes Wirolimo/Car1.jpg")
     image2 = Image.open("imagenes Wirolimo/Car3.jpg")
 
