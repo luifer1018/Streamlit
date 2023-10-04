@@ -35,8 +35,8 @@ if pagina_seleccionada == "Homepage":
     # Cargar las imágenes
     image3 = Image.open("imagenes Wirolimo/Car5.jpg")
     image4 = Image.open("imagenes Wirolimo/Car6.jpg")
-    parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
-    
+    parrafo2="Our sedan vehicles are ideal for city trips, business meetings, outings with friends or any occasion when you need comfortable and stylish transportation."
+   
     col3, col4 = st.columns(2)
 
     with col3:
@@ -45,16 +45,16 @@ if pagina_seleccionada == "Homepage":
     with col4:
         st.image(image4, caption="Sedan fleet", use_column_width=True)
         
-  
+        st.write("<hr>", unsafe_allow_html=True) # Linea divisora
         st.markdown(
-            f"<p style='text-align:justify; font-style: italic; color: black;'>{parrafo1}</p>",
+            f"<p style='text-align:justify; font-style: italic; color: black;'>{parrafo2}</p>",
             unsafe_allow_html=True,
         )
     
     image1 = Image.open("imagenes Wirolimo/Car1.jpg")
     image2 = Image.open("imagenes Wirolimo/Car3.jpg")
-
-
+    parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
+    
     # Dividir el diseño en dos columnas
     col1, col2 = st.columns(2)
 
@@ -67,9 +67,10 @@ if pagina_seleccionada == "Homepage":
     with col2:
         st.image(image2, caption="Sedan fleet", use_column_width=True)
         # Comentario para la segunda imagen
-        parrafo2="Our sedan vehicles are ideal for city trips, business meetings, outings with friends or any occasion when you need comfortable and stylish transportation."
+        
+        st.write("<hr>", unsafe_allow_html=True) # Linea divisora
         st.markdown(
-            f"<p style='text-align:justify; font-style: italic; color: black;'>{parrafo2}</p>",
+            f"<p style='text-align:justify; font-style: italic; color: black;'>{parrafo1}</p>",
             unsafe_allow_html=True,
         )
  
