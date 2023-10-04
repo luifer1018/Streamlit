@@ -37,7 +37,7 @@ if pagina_seleccionada == "Homepage":
     image4 = Image.open("imagenes Wirolimo/Car6.jpg")
     parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
     
-    col3, col4, col5 = st.columns(3)
+    col3, col4 = st.columns(2)
 
     with col3:
         st.image(image3, caption="SUV fleet", use_column_width=True)
@@ -45,7 +45,7 @@ if pagina_seleccionada == "Homepage":
     with col4:
         st.image(image4, caption="Sedan fleet", use_column_width=True)
         
-    with col5:     
+  
         st.markdown(
             f"<p style='text-align:justify; font-style: italic; color: black;'>{parrafo1}</p>",
             unsafe_allow_html=True,
