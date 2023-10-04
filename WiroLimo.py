@@ -126,7 +126,7 @@ elif pagina_seleccionada == "Sports Events Services":
     }
 
     # Función para enviar correo electrónico
-    def enviar_correo(destinatario, hora_servicio, evento, vehiculo):
+    def enviar_correo(destinatario, hora_servicio, evento, vehiculo, lugar_recogida):
         # Configurar el servidor SMTP
         smtp_server = "smtp.example.com"
         smtp_port = 587
@@ -140,7 +140,7 @@ elif pagina_seleccionada == "Sports Events Services":
         msg['Subject'] = "Confirmación de servicio"
 
         # Cuerpo del mensaje
-        mensaje = f"Gracias por reservar un servicio para el evento en {evento} en un {vehiculo} a las {hora_servicio}."
+        mensaje = f"Gracias por reservar un servicio desde {lugar_recogida} hacia {evento} en un {vehiculo} a las {hora_servicio}."
         msg.attach(MIMEText(mensaje, 'plain'))
 
         # Iniciar conexión con el servidor SMTP y enviar el correo
@@ -163,6 +163,9 @@ elif pagina_seleccionada == "Sports Events Services":
     # Selección de vehículo
     vehiculo = st.radio("Seleccione el tipo de vehículo:", ["Sedan", "SUV"])
 
+    # Campo para ingresar el lugar de recogida
+    lugar_recogida = st.text_input("pick up place:")
+
     # Calcular tarifa
     tarifa = tarifas_eventos[evento][vehiculo]
 
@@ -176,8 +179,8 @@ elif pagina_seleccionada == "Sports Events Services":
 
     # Botón para enviar reserva
     if st.button("Enviar reserva"):
-        if email and hora_servicio:
-            enviar_correo(email, hora_servicio.strftime("%H:%M"), evento, vehiculo)
+        if email and hora_servicio and lugar_recogida:
+            enviar_correo(email, hora_servicio.strftime("%H:%M"), evento, vehiculo, lugar_recogida)
         else:
             st.warning("Por favor, complete todos los campos.")
 
