@@ -51,7 +51,7 @@ if pagina_seleccionada == "Homepage":
             unsafe_allow_html=True,
         )
     
-    image1 = Image.open("imagenes Wirolimo/Car1.jpg")
+    image1 = Image.open("imagenes Wirolimo/Car8.jpg")
     image2 = Image.open("imagenes Wirolimo/Car7.jpg")
     parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
     
