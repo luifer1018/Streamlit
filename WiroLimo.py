@@ -43,8 +43,15 @@ if pagina_seleccionada == "Homepage":
 
     with col4:
         st.image(image4, caption="Sedan fleet", use_column_width=True)
-
+        
+    # Linea divisoria
     st.write("<hr>", unsafe_allow_html=True)
+    parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
+        st.markdown(
+            f"<p style='text-align:justify; font-style: italic; color: black;'>{parrafo1}</p>",
+            unsafe_allow_html=True,
+        )
+    
     image1 = Image.open("imagenes Wirolimo/Car1.jpg")
     image2 = Image.open("imagenes Wirolimo/Car3.jpg")
 
@@ -56,11 +63,7 @@ if pagina_seleccionada == "Homepage":
     with col1:
         st.image(image1, caption="SUV fleet", use_column_width=True)
         # Comentario para la primera imagen
-        parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
-        st.markdown(
-            f"<p style='text-align:justify; font-style: italic; color: black;'>{parrafo1}</p>",
-            unsafe_allow_html=True,
-        )
+        
     # Mostrar la segunda imagen en la columna derecha
     with col2:
         st.image(image2, caption="Sedan fleet", use_column_width=True)
