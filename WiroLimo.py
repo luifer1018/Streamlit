@@ -28,13 +28,25 @@ if pagina_seleccionada == "Homepage":
     # st.title(" Welcome to WiroLimo Transport  ")
 
     st.markdown(
-        "<h1 style='text-align:center; color: black;'>Welcome to WiroLimo Transport</h1>",
+        "<h1 style='text-align:center; color: black;'>Welcome to WiroLimo</h1>",
         unsafe_allow_html=True,
         )   
    
     # Cargar las imágenes
-    image1 = Image.open("imagenes Wirolimo/SUV.png")
-    image2 = Image.open("imagenes Wirolimo/Sedan.png")
+    image3 = Image.open("imagenes Wirolimo/Car3.png")
+    image4 = Image.open("imagenes Wirolimo/Car6.png")
+    
+    col3, col4 = st.columns(2)
+
+    with col3:
+        st.image(image3, caption="SUV fleet", use_column_width=True)
+
+    with col4:
+        st.image(image4, caption="Sedan fleet", use_column_width=True)
+
+    
+    image1 = Image.open("imagenes Wirolimo/Car1.png")
+    image2 = Image.open("imagenes Wirolimo/Car5.png")
 
 
     # Dividir el diseño en dos columnas
@@ -46,7 +58,7 @@ if pagina_seleccionada == "Homepage":
         # Comentario para la primera imagen
         parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
         st.markdown(
-            f"<p style='text-align:justify; font-family: cursive; font-style: italic; color: green;'>{parrafo1}</p>",
+            f"<p style='text-align:justify; font-style: italic; color: black;'>{parrafo1}</p>",
             unsafe_allow_html=True,
         )
     # Mostrar la segunda imagen en la columna derecha
@@ -55,10 +67,10 @@ if pagina_seleccionada == "Homepage":
         # Comentario para la segunda imagen
         parrafo2="Our sedan vehicles are ideal for city trips, business meetings, outings with friends or any occasion when you need comfortable and stylish transportation."
         st.markdown(
-            f"<p style='text-align:justify; font-family: cursive; font-style: italic; color: green;'>{parrafo2}</p>",
+            f"<p style='text-align:justify; font-style: italic; color: black;'>{parrafo2}</p>",
             unsafe_allow_html=True,
         )
-
+ 
 #---------------------------------------------------------------------------------------------------
 #REDES SOCIALES
     # Define una función para mostrar la barra de redes sociales
