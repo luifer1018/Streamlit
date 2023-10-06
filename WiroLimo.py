@@ -53,7 +53,7 @@ if pagina_seleccionada == "Homepage":
     
     image1 = Image.open("imagenes Wirolimo/Car8.jpg")
     image2 = Image.open("imagenes Wirolimo/Car7.jpg")
-    parrafo1="Don't skimp on space or comfort. Choose our 7-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
+    parrafo1="Don't skimp on space or comfort. Choose our 6-passenger SUV and experience a luxurious ride every journey. Book your trip today and discover the elegance and practicality we offer."
     
     # Dividir el diseño en dos columnas
     col1, col2 = st.columns(2)
