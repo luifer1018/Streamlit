@@ -6,7 +6,7 @@ st.title("Cifra Repartidora")
 
 # Crear un campo de entrada para ingresar la cantidad de votos de cada partido A-J
 st.subheader("Ingresar Votos por Partido")
-partidos = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+partidos = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J','K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R']
 votos_partidos = {}
 for partido in partidos:
     votos_partidos[partido] = st.number_input(f'Votos para el Partido {partido}', value=0)
