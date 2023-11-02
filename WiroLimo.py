@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 
  #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Configurar la página
-st.set_page_config(page_title="Video con Mute, Autoplay y Loop", layout="wide")
+st.set_page_config(page_title="Transportation", layout="wide")
 
 # Título de la página
 st.title("Video con Mute, Autoplay y Loop")
@@ -16,16 +16,15 @@ st.title("Video con Mute, Autoplay y Loop")
 # Agregar un video con las propiedades deseadas
 video_url = "https://media.istockphoto.com/id/540562016/es/v%C3%ADdeo/flota-de-autonom%C3%ADa-h%C3%ADbrido-de-camiones-por-carga-inal%C3%A1mbrica-lane.mp4?s=mp4-640x640-is&k=20&c=B8oXer5fPK2qnBQZ6_JMK292Y0IsogKYhmqMGRZQLso="
 video_code = f'''
-<video muted="true" autoplay="true" loop="true" controls width=80%>
+<video muted="true" autoplay="true" loop="true" controls width=100%>
   <source src="{video_url}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 '''
 st.markdown(video_code, unsafe_allow_html=True)
 
-# Instrucciones u otros elementos en la página
-st.write("¡Bienvenido a la página con video!")
 
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Logo de la empresa (cambia la URL a la de tu imagen PNG)
 logo_url = "imagenes Wirolimo/logo.png"
 
