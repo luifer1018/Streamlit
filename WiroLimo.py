@@ -8,10 +8,10 @@ from email.mime.text import MIMEText
 
  #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Configurar la página
-st.set_page_config(page_title="Transportation", layout="wide")
+st.set_page_config(page_title="WiroLimo", layout="wide")
 
 # Título de la página
-st.title("Video con Mute, Autoplay y Loop")
+#st.title("Transportation")
 
 # Agregar un video con las propiedades deseadas
 video_url = "https://media.istockphoto.com/id/540562016/es/v%C3%ADdeo/flota-de-autonom%C3%ADa-h%C3%ADbrido-de-camiones-por-carga-inal%C3%A1mbrica-lane.mp4?s=mp4-640x640-is&k=20&c=B8oXer5fPK2qnBQZ6_JMK292Y0IsogKYhmqMGRZQLso="
