@@ -16,6 +16,25 @@ st.sidebar.image(logo_url, use_column_width=True)
 # Sidebar para la navegación
 st.sidebar.title("Our menu")
 pagina_seleccionada = st.sidebar.selectbox("Select a page", ["Homepage", "Sports Events Services", "Airport Services", "About Us"])
+#*****************************************************************************
+# Configurar la página
+st.set_page_config(page_title="Video con Mute, Autoplay y Loop", layout="wide")
+
+# Título de la página
+st.title("Video con Mute, Autoplay y Loop")
+
+# Agregar un video con las propiedades deseadas
+video_url = "./transporte.mp4"
+video_code = f'''
+<video muted="true" autoplay="true" loop="true" controls width=50%>
+  <source src="{video_url}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+'''
+st.markdown(video_code, unsafe_allow_html=True)
+
+# Instrucciones u otros elementos en la página
+st.write("¡Bienvenido a la página con video!")
 
 
 #----------------------------------------------------------------------------------------------------
