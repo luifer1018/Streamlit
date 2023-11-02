@@ -14,7 +14,7 @@ st.set_page_config(page_title="WiroLimo", layout="wide")
 #st.title("Transportation")
 
 # Agregar un video con las propiedades deseadas
-video_url = "https://media.istockphoto.com/id/540562016/es/v%C3%ADdeo/flota-de-autonom%C3%ADa-h%C3%ADbrido-de-camiones-por-carga-inal%C3%A1mbrica-lane.mp4?s=mp4-640x640-is&k=20&c=B8oXer5fPK2qnBQZ6_JMK292Y0IsogKYhmqMGRZQLso="
+video_url = "https://media.istockphoto.com/id/1093281560/es/v%C3%ADdeo/vista-a%C3%A9rea-del-coche-en-la-autopista-del-puente-en-se%C3%BAl-al-sur-de-corea.mp4?s=mp4-640x640-is&k=20&c=nHRqXVrHZKSTd4ydcVNciccfS279dojNiuDkZrZVXkw="
 video_code = f'''
 <video muted="true" autoplay="true" loop="true" controls width=100%>
   <source src="{video_url}" type="video/mp4">
