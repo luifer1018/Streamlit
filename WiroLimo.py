@@ -24,7 +24,7 @@ st.set_page_config(page_title="Video con Mute, Autoplay y Loop", layout="wide")
 st.title("Video con Mute, Autoplay y Loop")
 
 # Agregar un video con las propiedades deseadas
-video_url = "./transporte.mp4"
+video_url = "transporte.mp4"
 video_code = f'''
 <video muted="true" autoplay="true" loop="true" controls width=50%>
   <source src="{video_url}" type="video/mp4">
